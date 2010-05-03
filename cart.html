@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <title>Spree Demo Site - Ruby on Rails Baseball Jersey</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="one-col" id="product-details">
+  
+  <div id="header" class="container">                                                          
+    <div id="login-bar">          
+      <ul id="nav-bar">
+        <li> 
+          <form action="#" method="get">
+            <select id="taxon" name="taxon">
+              <option value="">All departments</option>
+              <option value="1000">Categories</option>
+              <option value="20000">Brands</option>
+            </select>
+            <input id="keywords" name="keywords" type="text" />
+            <input type="submit" value="Search" />
+          </form>
+        </li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="cart-indicator"></li>
+      </ul>
+    </div>
+	  <a href="#"><img alt="Spree_50" src="images/admin/bg/spree_50.png" /></a>
+  </div>
+  
+  <div id="wrapper" class="container">
+    
+    <div id="content">
+      
+      <h1>Shopping Cart</h1>
+
+      <form action="#" class="edit_order" id="updatecart" method="post">
+
+        <table id="cart-detail">
+          <thead>
+            <tr>
+              <th colspan="2">Item</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="line_items">
+            <tr class="">
+              <td>
+                <img alt="Ror_baseball_jersey_green" src="assets/products/1009/small/ror_baseball_jersey_green.png" />
+              </td>
+              <td>
+                <h4><a href="#">Ruby on Rails Baseball Jersey</a></h4>
+                Color: Green, Size: S
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla nonummy aliquet mi. Proin lacus. ...
+              </td>
+              <td>
+                $19.99
+              </td>
+              <td>
+                <input id="order_line_items_attributes_0_quantity" name="order[line_items_attributes][0][quantity]" size="3" type="text" value="1" />
+              </td>
+              <td>
+                $19.99
+              </td>
+              <td>
+                <a href="#" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'ua1kxfmvHYfPeBCTwzOsuZnjXlQqqvFhgJgn9FZDmXc='); f.appendChild(s);f.submit();return false;"><img alt="Delete" src="images/admin/icons/delete.png?1272921809" /></a>
+              </td>
+            </tr>
+            <tr class="alt">
+              <td>
+                <img alt="Ror_tote" src="assets/products/1/small/ror_tote.jpeg" />
+              </td>
+              <td>
+                <h4><a href="#">Ruby on Rails Tote</a></h4>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla nonummy aliquet mi. Proin lacus. ...
+              </td>
+              <td>
+                $15.99
+              </td>
+              <td>
+                <input id="order_line_items_attributes_1_quantity" name="order[line_items_attributes][1][quantity]" size="3" type="text" value="1" />
+              </td>
+              <td>
+                $15.99
+              </td>
+              <td>
+                <a href="/orders/R863120028/line_items/1070870201" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'ua1kxfmvHYfPeBCTwzOsuZnjXlQqqvFhgJgn9FZDmXc='); f.appendChild(s);f.submit();return false;"><img alt="Delete" src="images/admin/icons/delete.png?1272921809" /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <div id="subtotal">
+          <h3>Subtotal: $35.98</h3>
+          <div class="links">
+            <a href="#" class="button checkout primary" onclick="$('form#updatecart').submit(); return false;"><img alt="Update" src="images/update.png" />Update</a>
+            <a href="#" class="button checkout primary"><img alt="Checkout" src="images/checkout.png" />Checkout</a>
+          </div>
+        </div>
+      
+        <p><a href="#" class="button continue">Continue shopping</a></p>
+        <p id="clear_cart_link">
+          <a href="#" class="button empty" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'ua1kxfmvHYfPeBCTwzOsuZnjXlQqqvFhgJgn9FZDmXc='); f.appendChild(s);f.submit();return false;">Empty Cart</a>
+        </p>
+      
+      </form>
+    </div>
+    
+    <div id="footer">
+      <div class="left">
+        <p>
+          Powered by <a href="#">Spree</a>
+        </p>
+      </div>
+      <div class="right">
+        <ul id="language-bar">
+          <li><strong>Change Language</strong></li>
+          <li>
+            <a href="/locale/set?locale=cs-CZ"><img alt="Čeština (CS)" src="images/flags/cz.png?1272921809" title="Čeština (CS)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=it"><img alt="Italiano (IT)" src="images/flags/it.png?1272921809" title="Italiano (IT)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=mx"><img alt="Español (México)" src="images/flags/mx.png?1272921809" title="Español (México)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=nl-BE"><img alt="Nederlands (BE)" src="images/flags/be.png?1272921809" title="Nederlands (BE)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=de"><img alt="Deutsch (DE)" src="images/flags/de.png?1272921809" title="Deutsch (DE)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=vn"><img alt="tiếng Việt (VN)" src="images/flags/vn.png?1272921809" title="tiếng Việt (VN)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=en-GB"><img alt="English (UK)" src="images/flags/gb.png?1272921809" title="English (UK)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=es"><img alt="Español (España)" src="images/flags/es.png?1272921809" title="Español (España)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=fi"><img alt="Suomi" src="images/flags/fi.png?1272921809" title="Suomi" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=il"><img alt="עִבְרִית (IL)" src="images/flags/il.png?1272921809" title="עִבְרִית (IL)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=nb-NO"><img alt="Norsk" src="images/flags/no.png?1272921809" title="Norsk" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=ru-RU"><img alt="Русский (RU)" src="images/flags/ru.png?1272921809" title="Русский (RU)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=en-AU"><img alt="English (Australia)" src="images/flags/au.png?1272921809" title="English (Australia)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=fr-FR"><img alt="Français (FR)" src="images/flags/fr.png?1272921809" title="Français (FR)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=jp"><img alt="日本語 (JP)" src="images/flags/jp.png?1272921809" title="日本語 (JP)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=pt-PT"><img alt="Português" src="images/flags/pt.png?1272921809" title="Português" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=en-US"><img alt="English (US)" src="images/flags/us.png?1272921809" title="English (US)" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=es-ES"><img alt="Es" src="images/flags/es.png?1272921809" /></a>
+          </li>
+          <li>
+            <a href="/locale/set?locale=nl-NL"><img alt="Nederlands (NL)" src="images/flags/nl.png?1272921809" title="Nederlands (NL)" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>  
+
+  </div>
+</body>
+</html>
