@@ -1,0 +1,68 @@
+.posts .post {
+  border-bottom: solid 1px #ccc;
+}
+
+.post {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.post .post-content p {
+  padding: 0 0 .5em 0;
+  margin: .5em 0 0;
+}
+.post h2.post-title {
+  margin: 0;
+  line-height: 1em;
+  text-transform: none;
+}
+.post h2.post-title padding {
+  bottom: 10px;
+}
+.post h2.post-title a,
+.post h2.post-title a:visited {
+  color: #333;
+  text-decoration: none;
+  font-weight: normal;
+}
+.post h2.post-title a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.post .post-date {
+  margin: 0 0 .5em 0;
+  font-size: 11px;
+  padding: 0;
+  color: #a5a5a5;
+}
+.post .post-date a {
+  text-decoration: none;
+}
+
+.post .post-meta {
+  margin: 3px 0 1.5em 0;
+  font-size: 12px;
+}
+.post .post-meta a {
+  color: #999999;
+  font-weight: normal;
+}
+
+#comments {
+  border-top: solid 5px #999;
+  padding-top: 10px;
+}
+
+.comment {
+  padding-top: 5px;
+  margin-bottom: 20px;
+  border-top: solid 1px #ccc;
+}
+.comment p {
+  padding: 5px 0;
+}
+.comment .meta span {
+  padding-left: 5px;
+  font-size: 11px;
+  color: #999;
+}
