@@ -1,0 +1,1 @@
+Use this set of templates to style your spree e-commerce site
