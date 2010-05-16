@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <title>Spree Demo Site - Log In</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="one-col" id="login">
+  <div id="header" class="container">                                                          
+    <div id="login-bar">          
+      <ul id="nav-bar">
+        <li> 
+          <form action="#" method="get">
+            <select id="taxon" name="taxon">
+              <option value="">All departments</option>
+              <option value="1000">Categories</option>
+              <option value="20000">Brands</option>
+            </select>
+            <input id="keywords" name="keywords" type="text" />
+            <input type="submit" value="Search" />
+          </form>
+        </li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="cart-indicator"><a href="#">Cart</a></li>
+      </ul>
+    </div>
+	  <a href="#"><img alt="Spree_50" src="images/admin/bg/spree_50.png" /></a>
+  </div>  
+  
+  <div id="wrapper" class="container"> 
+        
+    <div id="content">
+      
+      <div id="existing-customer">
+        <h2>Log In as Existing Customer</h2>
+  
+        <form action="#" method="post">
+          <div id='password-credentials'>
+            <p>
+              <label for="user_session_login">Email</label><br />
+              <input class="title" id="user_session_login" name="user_session[login]" size="30" type="text" />
+            </p>
+            <p>
+              <label for="user_session_password">Password</label><br />
+              <input class="title" id="user_session_password" name="user_session[password]" size="30" type="password" />
+            </p>
+          </div>
+  
+          <p>
+  	        <label>
+  	          <input name="user_session[remember_me]" type="hidden" value="0" />
+  	          <input id="user_session_remember_me" name="user_session[remember_me]" type="checkbox" value="1" />
+              <label for="user_session_remember_me">Remember me</label>
+	          </label>
+	        </p>
+
+          <p><input class="button primary" name="commit" type="submit" value="Log In" /></p>
+
+        </form>
+        
+        <hr />
+
+        <p id='enable_login_via_openid'><a href='#'>Use OpenID instead</a></p>
+          or <a href="#">Create a new account</a> | <a href="/password_resets/new">Forgot Password</a>  
+      </div>
+
+    </div>
+       
+    <div id="footer">
+      <div class="left">
+        <p>
+          Powered by <a href="#">Spree</a>
+        </p>
+      </div>
+      <div class="right">
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
