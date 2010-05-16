@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <title>Spree Demo Site - Checkout</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+  
+</head>
+<body class="one-col">
+  <div id="header" class="container">                                                          
+    <div id="login-bar">          
+      <ul id="nav-bar">
+        <li> 
+          <form action="#" method="get">
+            <select id="taxon" name="taxon">
+              <option value="">All departments</option>
+              <option value="1000">Categories</option>
+              <option value="20000">Brands</option>
+            </select>
+            <input id="keywords" name="keywords" type="text" />
+            <input type="submit" value="Search" />
+          </form>
+        </li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="cart-indicator"><a href="#" class="full">Cart: (1) $17.99</a></li>
+      </ul>
+    </div>
+	  <a href="#"><img alt="Spree_50" src="images/admin/bg/spree_50.png" /></a>
+  </div>
+  
+  <div id="wrapper" class="container">
+    
+    <div id="content">
+      
+      <div id="checkout">
+
+        <h1>Checkout</h1>
+        <ol class="progress-steps" id="checkout-step-confirm">
+          <li class="completed-first"><span><a href="#">Address</a></span></li>
+          <li class="completed"><span><a href="#">Delivery</a></span></li>
+          <li class="completed"><span><a href="#">Payment</a></span></li>
+          <li class="current"><span>Confirm</span></li>
+        </ol>            
+        
+        <br clear="left" />
+        
+        <div id="checkout-summary">
+          <h3>Order Summary</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td><strong>Item Total:</strong></td>
+                <td><strong>$17.99</strong></td>
+              </tr>
+            </tbody>
+            <tbody id="summary-order-charges">
+              <tr>
+                <td>Tax: </td>
+                <td>$0.00</td>
+              </tr>
+              <tr>
+                <td>Shipping (UPS One Day): </td>
+                <td>$15.00</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td><strong>Order Total:</strong></td>
+                <td><strong><span id="summary-order-total">$17.99</span></strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <form action="#" class="edit_checkout" id="checkout-summary-form" method="post">
+            <label>Coupon Code</label>
+            <input id="coupon-code" name="checkout[coupon_code]" size="14" type="text" />
+            <input id="post-summary" type="submit" value="Apply"/>
+          </form>
+          <div id="coupon-error"></div>
+        </div>        
+  
+        <form action="#" class="edit_checkout" id="checkout_form_confirm" method="post">
+          <fieldset id="order_details">
+            <div class="clear"></div>
+            <legend>Confirm</legend>
+
+            <table class="index">
+              <tbody id='line-items'>
+                <tr>
+                  <th>Item Description</th>
+                  <th class="price">Price</th>
+                  <th class="qty">Qty</th>
+                  <th class="total"><span>Total</span></th>
+                </tr>
+                <tr>
+                  <td width="300">Ruby on Rails Ringer T-Shirt </td>
+                  <td class="price">$17.99</td>
+                  <td class="qty">1</td>
+                  <td class="total"><span>$17.99</span></td>
+                </tr>
+              </tbody>
+
+              <tbody id='subtotal'>
+                <tr class="total" id="subtotal-row">
+                  <td colspan="3"><b>Subtotal:</b></td>
+                  <td class="total"><span>$17.99</span></td>
+                </tr>
+              </tbody>
+              
+              <tbody id="order-charges">
+                <tr class="total">
+                  <td colspan="3"><strong>Tax</strong></td>
+                  <td class="total"><span>$0.00</span></td>
+                </tr>
+                <tr class="total">
+                  <td colspan="3"><strong>Shipping (UPS One Day)</strong></td>
+                  <td class="total"><span>$15.00</span></td>
+                </tr>
+              </tbody>
+
+              <tbody id='order-total'>
+                <tr class="total">
+                  <td colspan="3"><b>Order Total:</b></td>
+                  <td class="total"><span id="order_total">$32.99</span></td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </fieldset>
+
+          <hr />
+          
+          <div class="form-buttons">
+            <input type="submit" class="continue button primary" value="Place Order" />
+          </div>
+          
+        </form>
+      </div>
+    </div>
+      
+    <div id="footer">
+      <div class="left">
+        <p>
+          Powered by <a href="#">Spree</a>
+        </p>
+      </div>
+      <div class="right">
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
