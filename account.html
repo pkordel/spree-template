@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <title>Spree Demo Site - Account</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="one-col">
+  <div id="header" class="container">                                                          
+    <div id="login-bar">          
+      <ul id="nav-bar">
+        <li> 
+          <form action="#" method="get">
+            <select id="taxon" name="taxon">
+              <option value="">All departments</option>
+              <option value="1000">Categories</option>
+              <option value="20000">Brands</option>
+            </select>
+            <input id="keywords" name="keywords" type="text" />
+            <input type="submit" value="Search" />
+          </form>
+        </li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="cart-indicator"><a href="#">Cart</a></li>
+      </ul>
+    </div>
+	  <a href="/"><img alt="Spree_50" src="images/admin/bg/spree_50.png" /></a>
+  </div>
+  <div id="wrapper" class="container"> 
+    <div id="content">
+      <h1>My Account</h1>
+
+      <table>
+        <tr>
+          <td>Email:</td>
+          <td>
+            spree@example.com
+          </td>
+        </tr>
+      </table>
+      <p><a href="#">Edit</a></p>
+      
+      <h2>My Orders</h2>
+
+      <table class="order-summary" width="545">
+        <thead>
+          <tr>
+            <th>Order</th>
+            <th>Order Date</th>
+            <th>Status</th>
+            <th>Customer</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="even">
+            <td><a href="#">R335303012</a></td>
+            <td>2010-05-16</td>
+            <td>New</td>
+            <td>spree@example.com</td>
+            <td>$32.99</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+    </div>
+    <div id="footer">
+      <div class="left">
+        <p>
+          Powered by <a href="#">Spree</a>
+        </p>
+      </div>
+      <div class="right">
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
