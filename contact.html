@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <title>Spree Demo Site</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body class="one-col">
+
+  <div id="header" class="container">                                                          
+    <div id="login-bar">          
+      <ul id="nav-bar">
+        <li> 
+          <form action="#" method="get">
+            <select id="taxon" name="taxon">
+              <option value="">All departments</option>
+              <option value="1000">Categories</option>
+              <option value="20000">Brands</option>
+            </select>
+            <input id="keywords" name="keywords" type="text" />
+            <input type="submit" value="Search" />
+          </form>
+        </li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="cart-indicator"><a href="#" class="full">Cart: (2) $35.98</a></li>
+      </ul>
+    </div>
+	  <a href="/"><img alt="Spree_50" src="images/admin/bg/spree_50.png" /></a>
+  </div>
+  
+  <div id="wrapper" class="container">
+    
+    <div id="content">
+      <h1>Contact Us!</h1>
+      <div id="product-wrapper">
+        <div class="generic_form">
+        	<form action="#" method="post">
+        	  <p>
+        	    <label for="inquiry_name">Your Name</label>
+        		  <input class="required" id="inquiry_name" name="inquiry[name]" size="30" type="text" />
+        		</p>
+        		<p>
+        		  <label for="inquiry_email">Your Email Address</label>
+        		  <input class="required email" id="inquiry_email" name="inquiry[email]" size="30" type="text" />
+        		</p>
+        		<p>
+        		  <label for="inquiry_name">Type of Inquiry</label>
+        		  <select id="inquiry_inquiry_type" name="inquiry[inquiry_type]">
+        		    <option value="General Information">General Information</option>
+                <option value="Order Information">Order Information</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Feature Request">Feature Request</option>
+                <option value="Bug Report">Bug Report</option>
+                <option value="Other">Other</option>
+              </select>
+        		</p>
+        		<p>
+        		  <label for="inquiry_order_no">Order #</label>
+        		  <input id="inquiry_order_no" name="inquiry[order_no]" size="30" type="text" />
+        		</p>
+        		<p>
+        		  <label for="inquiry_message">Message</label>
+        		  <textarea class="required" cols="40" id="inquiry_message" name="inquiry[message]" rows="20"></textarea>
+        		</p>
+        		<p>
+        		  <input name="commit" type="submit" value="Send It!" />
+        	  </p>
+        	</form>
+        </div>
+      </div>
+    </div>
+    
+    <div id="footer">
+      <div class="left">
+        <p>
+          Powered by <a href="#">Spree</a>
+        </p>
+      </div>
+      <div class="right">
+        <ul id="language-bar">
+          <li><strong>Change Language</strong></li>
+          <li>
+            <a href="#"><img alt="Čeština (CS)" src="images/flags/cz.png?1272921809" title="Čeština (CS)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Italiano (IT)" src="images/flags/it.png?1272921809" title="Italiano (IT)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Español (México)" src="images/flags/mx.png?1272921809" title="Español (México)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Nederlands (BE)" src="images/flags/be.png?1272921809" title="Nederlands (BE)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Deutsch (DE)" src="images/flags/de.png?1272921809" title="Deutsch (DE)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="tiếng Việt (VN)" src="images/flags/vn.png?1272921809" title="tiếng Việt (VN)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="English (UK)" src="images/flags/gb.png?1272921809" title="English (UK)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Español (España)" src="images/flags/es.png?1272921809" title="Español (España)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Suomi" src="images/flags/fi.png?1272921809" title="Suomi" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="עִבְרִית (IL)" src="images/flags/il.png?1272921809" title="עִבְרִית (IL)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Norsk" src="images/flags/no.png?1272921809" title="Norsk" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Русский (RU)" src="images/flags/ru.png?1272921809" title="Русский (RU)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="English (Australia)" src="images/flags/au.png?1272921809" title="English (Australia)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Français (FR)" src="images/flags/fr.png?1272921809" title="Français (FR)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="日本語 (JP)" src="images/flags/jp.png?1272921809" title="日本語 (JP)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Português" src="images/flags/pt.png?1272921809" title="Português" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="English (US)" src="images/flags/us.png?1272921809" title="English (US)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Es" src="images/flags/es.png?1272921809" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Nederlands (NL)" src="images/flags/nl.png?1272921809" title="Nederlands (NL)" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
