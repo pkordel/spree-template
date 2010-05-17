@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <title>Frequently Asked Questions</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="javascripts/jquery-1.3.2.min.js" type="text/javascript"></script>
+  
+  
+  <script type="text/javascript">
+  //<![CDATA[
+
+      $(document).ready(function() {
+        $('.answer').hide();
+        $('.question').click(function() {
+          var id = $(this).attr('id').split('_')[1];
+          $('#answer_' + id).slideToggle();
+        });
+      });
+
+  //]]>
+  </script>
+  
+</head>
+
+<body class="one-col">
+
+  <div id="header" class="container">                                                          
+    <div id="login-bar">          
+      <ul id="nav-bar">
+        <li> 
+          <form action="#" method="get">
+            <select id="taxon" name="taxon">
+              <option value="">All departments</option>
+              <option value="1000">Categories</option>
+              <option value="20000">Brands</option>
+            </select>
+            <input id="keywords" name="keywords" type="text" />
+            <input type="submit" value="Search" />
+          </form>
+        </li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="cart-indicator"><a href="#" class="full">Cart: (2) $35.98</a></li>
+      </ul>
+    </div>
+	  <a href="/"><img alt="Spree_50" src="images/admin/bg/spree_50.png" /></a>
+  </div>
+  
+  <div id="wrapper" class="container">
+    
+    <div id="content">
+      <h1>Frequently Asked Questions</h1>
+      <div id="faqs">
+        <div>
+          <h2>Sales</h2>
+          <ul>
+            <li>
+              <a class="question" id="question_215907863">How much does it cost?</a>
+              <div class="answer" id="answer_215907863">
+                Contact customer support
+              </div>
+            </li>
+            <li>
+              <a class="question" id="question_366423983">Does it do X?</a>
+              <div class="answer" id="answer_366423983">
+                Duh
+              </div>
+            </li>
+            <li>
+              <a class="question" id="question_584064828">Can I return it?</a>
+              <div class="answer" id="answer_584064828">
+                Maybe
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Billing</h2>
+          <ul>
+            <li>
+              <a class="question" id="question_314239928">Can I use VISA?</a>
+              <div class="answer" id="answer_314239928">
+                Yes!
+              </div>
+            </li>
+            <li>
+              <a class="question" id="question_633199397">Can I use PayPal?</a>
+              <div class="answer" id="answer_633199397">
+                Yes!
+              </div>
+            </li>
+            <li>
+              <a class="question" id="question_889374386">Can I use AMEX?</a>
+              <div class="answer" id="answer_889374386">
+                Yes!
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Shipping</h2>
+          <ul>
+            <li>
+              <a class="question" id="question_196327952">What if it breaks?</a>
+              <div class="answer" id="answer_196327952">
+                At your own risk
+              </div>
+            </li>
+            <li>
+              <a class="question" id="question_1018464921">How much does shipping cost?</a>
+              <div class="answer" id="answer_1018464921">
+                Contact customer support
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="footer">
+      <div class="left">
+        <p>
+          Powered by <a href="#">Spree</a>
+        </p>
+      </div>
+      <div class="right">
+        <ul id="language-bar">
+          <li><strong>Change Language</strong></li>
+          <li>
+            <a href="#"><img alt="Čeština (CS)" src="images/flags/cz.png?1272921809" title="Čeština (CS)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Italiano (IT)" src="images/flags/it.png?1272921809" title="Italiano (IT)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Español (México)" src="images/flags/mx.png?1272921809" title="Español (México)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Nederlands (BE)" src="images/flags/be.png?1272921809" title="Nederlands (BE)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Deutsch (DE)" src="images/flags/de.png?1272921809" title="Deutsch (DE)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="tiếng Việt (VN)" src="images/flags/vn.png?1272921809" title="tiếng Việt (VN)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="English (UK)" src="images/flags/gb.png?1272921809" title="English (UK)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Español (España)" src="images/flags/es.png?1272921809" title="Español (España)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Suomi" src="images/flags/fi.png?1272921809" title="Suomi" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="עִבְרִית (IL)" src="images/flags/il.png?1272921809" title="עִבְרִית (IL)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Norsk" src="images/flags/no.png?1272921809" title="Norsk" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Русский (RU)" src="images/flags/ru.png?1272921809" title="Русский (RU)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="English (Australia)" src="images/flags/au.png?1272921809" title="English (Australia)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Français (FR)" src="images/flags/fr.png?1272921809" title="Français (FR)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="日本語 (JP)" src="images/flags/jp.png?1272921809" title="日本語 (JP)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Português" src="images/flags/pt.png?1272921809" title="Português" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="English (US)" src="images/flags/us.png?1272921809" title="English (US)" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Es" src="images/flags/es.png?1272921809" /></a>
+          </li>
+          <li>
+            <a href="#"><img alt="Nederlands (NL)" src="images/flags/nl.png?1272921809" title="Nederlands (NL)" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
