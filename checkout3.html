@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" dir="ltr" class="no-js">
 <head>
 
-  <title>Spree Demo Site - Checkout</title>
+  <title>Spree Demo Site - Payment</title>
   <meta charset="UTF-8" />
   <link href="stylesheets/screen.css" rel="stylesheet" />
   <link href="stylesheets/site.css" rel="stylesheet" />
+  <script src="javascripts/modernizr-1.5.min.js"></script>
   
 </head>
+
 <body class="one-col">
   <div id="header" class="container">                                                          
     <div id="login-bar">          
@@ -74,7 +76,7 @@
               </tr>
             </tbody>
           </table>
-          <form action="#" class="edit_checkout" id="checkout-summary-form" method="post">
+          <form action="checkout4.html" class="edit_checkout" id="checkout-summary-form" method="get">
             <label>Coupon Code</label>
             <input id="coupon-code" name="checkout[coupon_code]" size="14" type="text" />
             <input id="post-summary" type="submit" value="Apply"/>
@@ -82,7 +84,7 @@
           <div id="coupon-error"></div>
         </div>        
   
-        <form action="#" class="edit_checkout" id="checkout_form_delivery" method="post">
+        <form action="checkout4.html" class="edit_checkout" id="checkout_form_delivery" method="get">
           <fieldset id="payment">
             <legend>Payment Information</legend>
             <p>

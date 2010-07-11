@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" dir="ltr" class="no-js">
 <head>
 
-  <title>Spree Demo Site - Ruby on Rails Baseball Jersey</title>
+  <title>Spree Demo Site - Cart</title>
   <meta charset="UTF-8" />
   <link href="stylesheets/screen.css" rel="stylesheet" />
   <link href="stylesheets/site.css" rel="stylesheet" />
-
+  <script src="javascripts/modernizr-1.5.min.js"></script>
+  
 </head>
 
 <body class="one-col" id="product-details">
@@ -103,11 +104,11 @@
           <h3>Subtotal: $35.98</h3>
           <div class="links">
             <a href="#" class="button checkout primary" onclick="$('form#updatecart').submit(); return false;"><img alt="Update" src="images/update.png" />Update</a>
-            <a href="#" class="button checkout primary"><img alt="Checkout" src="images/checkout.png" />Checkout</a>
+            <a href="checkout1.html" class="button checkout primary"><img alt="Checkout" src="images/checkout.png" />Checkout</a>
           </div>
         </div>
       
-        <p><a href="#" class="button continue">Continue shopping</a></p>
+        <p><a href="products.html" class="button continue">Continue shopping</a></p>
         <p id="clear_cart_link">
           <a href="#" class="button empty" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'ua1kxfmvHYfPeBCTwzOsuZnjXlQqqvFhgJgn9FZDmXc='); f.appendChild(s);f.submit();return false;">Empty Cart</a>
         </p>
